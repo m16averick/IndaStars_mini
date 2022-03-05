@@ -1,0 +1,24 @@
+:root
+{
+  --global-color-accent: pink;
+}
+
+$gray: #edebeb;
+.segment
+{
+  display: flex;
+  justify-content: space-around;
+
+  & .content 
+  {
+    width: 1166px;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+#nft-sections
+{
+  margin-top: 104px;
+  min-height: calc(200vh - 204px);
+}

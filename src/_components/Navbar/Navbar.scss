@@ -1,0 +1,34 @@
+$gray: #edebeb;
+$blue: #a40000;
+$white: #dbf1ff;
+
+#nft-navbar {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  border-bottom: solid 1px $gray;
+  background-color: white;
+
+  & .nft-navbar__content {
+    width: 1166px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    
+        &  #siteLogo
+        {
+            margin-top: 10px;
+            width: 145px;
+            background-repeat: no-repeat;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+    }
+}

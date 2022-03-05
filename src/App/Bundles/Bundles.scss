@@ -1,0 +1,20 @@
+$gray: #edebeb;
+
+.bundleSelector
+{
+    display: flex;
+    border-bottom: solid 1px $gray;
+    
+    & .bundle 
+    {
+        margin: 20px 100px 20px 0;
+    }
+
+    & .bundle a
+    {
+        font-family: "Montserrat",sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--global-color-accent)
+    }
+}
