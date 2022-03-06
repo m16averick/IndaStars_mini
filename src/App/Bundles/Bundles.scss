@@ -1,20 +1,48 @@
 $gray: #edebeb;
 
-.bundleSelector
-{
-    display: flex;
-    border-bottom: solid 1px $gray;
-    
-    & .bundle 
-    {
-        margin: 20px 100px 20px 0;
-    }
+.bundleSelector {
+  display: flex;
+  border-bottom: solid 1px $gray;
 
-    & .bundle a
-    {
-        font-family: "Montserrat",sans-serif;
-        font-weight: 700;
-        text-decoration: none;
-        color: var(--global-color-accent)
+  & .bundle {
+    padding: 20px 0;
+    margin-right: 100px;
+    filter: grayscale(1);
+    opacity: 0.5;
+    transition: all 0.3s;
+    position: relative;
+    &::after {
+      content: "";
+      width: 100%;
+      bottom: -1px;
+      position: absolute;
+      border-bottom: solid #ea70c3 2px;
+      opacity: 0;
+      transition: all .3s;
     }
+    &.active {
+      opacity: 1;
+      filter: grayscale(0);
+    &::after 
+    {
+        opacity: 1;
+    }
+    }
+  }
+
+  & .bundle a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--global-color-accent);
+    display: flex;
+    & span {
+      margin-left: 5.43px;
+      color: black;
+    }
+    & path,
+    & rect {
+      fill: #ea70c3;
+    }
+  }
 }

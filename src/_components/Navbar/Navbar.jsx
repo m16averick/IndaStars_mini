@@ -1,7 +1,6 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Navbar.scss";
-import { ReactSVG } from "react-svg";
-import logo from "./logo.svg";
+import logo from "./assets/logo.svg";
 import AnimateHeight from "react-animate-height";
 
 const Navbar = () => {

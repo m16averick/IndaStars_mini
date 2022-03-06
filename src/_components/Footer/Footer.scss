@@ -1,0 +1,75 @@
+$gray: #edebeb;
+#nft-footer {
+  height: 118px;
+  border-top: solid 1px $gray;
+  color: var(--global-color-black40);
+  font-family: "Montserrat";
+
+  & .nft-footer__content {
+    width: 1366px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+
+    & .row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      & .col-l {
+        display: flex;
+        & .hologram1 {
+          margin-right: 8px;
+          width: 48px;
+          height: 48px;
+        }
+        & .hologram2 {
+          margin-right: 32px;
+          width: 48px;
+          height: 48px;
+        }
+        & .contractors {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          & .contractor {
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+    & .col-r {
+      & .row1 {
+        & a {
+          text-decoration: none;
+          margin-left: 32px;
+          color: var(--global-color-black40);
+          transition: color 0.3s;
+          font-size: 12px;
+          line-height: 18px;
+          font-weight: 500;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+      & .row2 {
+        margin-top: 18.5px;
+        height: 0;
+        display: flex;
+        justify-content: flex-end;
+        & .icon {
+          margin-left: 12px;
+          & svg path {
+            transition: fill 0.3s;
+          }
+          &:hover svg path {
+            fill: rgb(31, 31, 31);
+          }
+        }
+      }
+    }
+  }
+}

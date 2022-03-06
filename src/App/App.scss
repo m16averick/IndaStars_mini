@@ -3,6 +3,7 @@
   --global-color-primary: #6C71E0;
   --global-color-accent: #f69bc8;
   --global-color-ambient: #B7BBFF;
+  --global-color-black40: #AAA9A8;
 }
 
 $gray: #edebeb;
@@ -13,7 +14,7 @@ $gray: #edebeb;
 
   & .content 
   {
-    width: 1366px;
+    width: 1190px;
     justify-content: space-between;
     padding: 0;
   }
@@ -22,5 +23,5 @@ $gray: #edebeb;
 #nft-sections
 {
   margin-top: 104px;
-  min-height: calc(200vh - 204px);
+  min-height: calc(100vh - 222px);
 }

@@ -1,0 +1,49 @@
+.gridFilters 
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    & .summary
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 500;
+        color: #AAA9A8;
+        & span 
+        {
+            margin-left: 4px;
+            font-weight: 700;
+            font-size: 16px;
+            color: black;
+        }
+    }
+    & .sortBy 
+    {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+    & #sortBy
+    {
+        padding: 10px 20px;
+        border: solid #d2d2d2 1px;
+        border-radius: 5px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        margin-left: 16px;
+    }
+}
+.cardGrid
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & .card-holder
+    {
+        margin-bottom: 30px;
+    }
+}

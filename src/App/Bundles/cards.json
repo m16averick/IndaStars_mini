@@ -1,0 +1,55 @@
+{
+    "cards":[
+       {
+          "id":"b7a7d948-197c-11ec-9621-0242ac130002",
+          "no":"02 ",
+          "count":"52",
+          "image":"https://via.placeholder.com/500",
+          "name":"Summer 🏖🍹 Vibes!",
+          "receivedOn":"2021-09-01 20:21:14",
+          "collectionName":"summer Influ Pack 🌞",
+          "properties":[
+             {
+                "name":"fire",
+                "value":98
+             },
+             {
+                "name":"star",
+                "value":28100
+             }
+          ],
+          "poweredBy":"influencer_nickname",
+          "state":{
+             "isOnSwap":true,
+             "isOnSale":true
+          },
+          "shareUrl":"https://indahash.com/cards/b7a7d948-197c-11ec-9621-0242ac130002"
+       },
+       {
+         "id":"b7a7d948-197c-11ec-9621-0242ac130002",
+         "no":"03 ",
+         "count":"52",
+         "image":"https://via.placeholder.com/500",
+         "name":"Summer 🏖🍹 Vibes!",
+         "receivedOn":"2021-09-01 20:21:14",
+         "collectionName":"summer Influ Pack 🌞",
+         "properties":[
+            {
+               "name":"fire",
+               "value":98
+            },
+            {
+               "name":"star",
+               "value":28100
+            }
+         ],
+         "poweredBy":"influencer_nickname",
+         "state":{
+            "isOnSwap":true,
+            "isOnSale":true
+         },
+         "shareUrl":"https://indahash.com/cards/b7a7d948-197c-11ec-9621-0242ac130002"
+      }
+    ],
+    "totalCount":1
+ }

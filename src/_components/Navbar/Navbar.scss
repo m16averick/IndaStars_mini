@@ -1,6 +1,4 @@
 $gray: #edebeb;
-$blue: #a40000;
-$white: #dbf1ff;
 
 #nft-navbar {
   z-index: 100;
@@ -13,7 +11,8 @@ $white: #dbf1ff;
   justify-content: space-around;
   flex-direction: row;
   border-bottom: solid 1px $gray;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
 
   & .nft-navbar__content {
     width: 1366px;
@@ -21,14 +20,13 @@ $white: #dbf1ff;
     flex-direction: column;
     justify-content: space-around;
     padding: 0;
-    
-        &  #siteLogo
-        {
-            margin-top: 10px;
-            width: 145px;
-            background-repeat: no-repeat;
-            margin-bottom: 10px;
-            cursor: pointer;
-        }
+
+    & #siteLogo {
+      margin-top: 10px;
+      width: 145px;
+      background-repeat: no-repeat;
+      margin-bottom: 10px;
+      cursor: pointer;
     }
+  }
 }

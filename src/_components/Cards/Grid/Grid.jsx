@@ -1,12 +1,13 @@
 import React from "react";
+import "./Grid.scss";
+import { GridFilters } from "./GridFilters";
 
-const Grid = ( props ) => {
+const Grid = (props) => {
   return (
-    <>
-      <div className="cardGrid" style={{marginTop: "50px"}}>
-        {props.children}
-      </div>
-    </>
+    <div className="gridWrap">
+      <GridFilters total={4}/>
+      <div className="cardGrid">{props.children}</div>
+    </div>
   );
 };
 
