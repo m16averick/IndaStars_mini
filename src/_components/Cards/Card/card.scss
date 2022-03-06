@@ -1,0 +1,136 @@
+.card-holder {
+  width: 280px;
+  height: 500.77px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  &:hover .card-wrap {
+    height: calc(100% - 17.77px);
+    width: 100%;
+  }
+}
+
+.card-wrap {
+  margin-top: 17.77px;
+  position: absolute;
+  border: solid 1px;
+  height: 50%;
+  width: 50%;
+  transition: all 0.6s;
+  border: 1px solid #eaeae9;
+  box-sizing: border-box;
+  border-radius: 16px;
+
+  padding: 16.15px 20px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  & img 
+  {
+      width: 32px;
+      height: 25.85px;
+  }
+}
+
+.card {
+  max-width: 240px;
+  max-height: 418.38px;
+  border-radius: 16px;
+  //height: 420px;
+  background-position: 80% 0 !important;
+  background-size: cover !important;
+  font-family: "Montserrat";
+  font-weight: 600;
+  z-index: 5;
+
+  & a {
+    color: #6c71e0;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--global-color-accent);
+    }
+  }
+
+  & .header {
+    display: flex;
+    padding: 8px;
+    color: var(--global-color-primary);
+    & img.star {
+      height: 33px;
+      width: 33px;
+      margin-right: 8px;
+    }
+    & .amount {
+      font-size: 14px;
+      line-height: 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      font-weight: 500;
+    }
+  }
+  & .card-body {
+    padding: 16px;
+    & h5.title {
+      color: var(--global-color-primary);
+      margin: 0;
+      font-size: 15px;
+      line-height: 15px;
+      margin-bottom: 4px;
+    }
+    & p.text {
+      margin: 0;
+      color: var(--global-color-ambient);
+      font-size: 11px;
+      margin-bottom: 12px;
+    }
+    & .details {
+      display: flex;
+      & .stars {
+        margin-left: 68.5px;
+      }
+      & .power,
+      & .stars {
+        display: flex;
+        & .imgWrap {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          & img {
+            width: 12.5px;
+            height: 17.92px;
+            margin-right: 7.75px;
+          }
+        }
+        & .power-amount {
+          color: #f69bc8;
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        & .stars-amount {
+          color: #9295dc;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+    & hr {
+      margin-top: 16px;
+      margin-bottom: 12px;
+      border-top: 1px dashed #b7bbff;
+    }
+    & .card-body__footer {
+      font-size: 10px;
+      line-height: 20px;
+      color: #b7bbff;
+      display: flex;
+      & .iName {
+        margin-left: 4px;
+      }
+    }
+  }
+}

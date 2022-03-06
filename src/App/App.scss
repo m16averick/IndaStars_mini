@@ -1,6 +1,8 @@
 :root
 {
-  --global-color-accent: pink;
+  --global-color-primary: #6C71E0;
+  --global-color-accent: #f69bc8;
+  --global-color-ambient: #B7BBFF;
 }
 
 $gray: #edebeb;
@@ -11,7 +13,7 @@ $gray: #edebeb;
 
   & .content 
   {
-    width: 1166px;
+    width: 1366px;
     justify-content: space-between;
     padding: 0;
   }
