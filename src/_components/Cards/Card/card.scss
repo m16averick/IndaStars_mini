@@ -26,10 +26,12 @@
   justify-content: flex-end;
   flex-direction: column;
 
-  & img 
-  {
-      width: 32px;
-      height: 25.85px;
+  & img {
+    padding: 7.5px 8.5px;
+    border: solid 1px #EAEAE9;
+    border-radius: 4px;
+    width: 15px;
+    height: 10.77px;
   }
 }
 
@@ -43,6 +45,12 @@
   font-family: "Montserrat";
   font-weight: 600;
   z-index: 5;
+
+  & img {
+    width: 240px;
+    height: 220px;
+    object-fit: cover;
+  }
 
   & a {
     color: #6c71e0;

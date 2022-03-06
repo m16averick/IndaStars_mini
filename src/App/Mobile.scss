@@ -1,0 +1,34 @@
+@media screen and (max-width: 1420px) {
+  .content {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: 657px) {
+  .content {
+    margin: 0 20px;
+  }
+  html body .cardGrid {
+    justify-content: space-around;
+  }
+  html body .bundleSelector .bundle {
+    margin-right: 20px;
+  }
+  .gridFilters {
+    flex-direction: column;
+    & .summary {
+      width: 100%;
+      order: 2;
+    }
+    & .sortBy {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  html body #nft-footer .nft-footer__content .row .col-l .contractors {
+    display: none;
+  }
+  .row1 {
+    text-align: right;
+  }
+}

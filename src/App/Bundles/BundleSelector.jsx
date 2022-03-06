@@ -1,21 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import cardsIcn from "./assets/cards.svg";
 import deckIcn from "./assets/deck.svg";
 import packIcn from "./assets/packs.svg";
 
 import { ReactSVG } from "react-svg";
-import { Link, useLocation } from "react-router-dom";
 
 const BundleSelector = ({ active, setActive }) => {
-  useEffect(() => {
-    console.log(active);
-  }, [active]);
   return (
     //na razie niech tak bedzie
     <div className="bundleSelector">
       <div
         className={`bundleSelector__bundle bundle ${
-          active == "Cards" ? "active" : "inactive"
+          active === "Cards" ? "active" : "inactive"
         }`}
       >
         <a
@@ -31,7 +27,7 @@ const BundleSelector = ({ active, setActive }) => {
       </div>
       <div
         className={`bundleSelector__bundle bundle ${
-          active == "Packs" ? "active" : "inactive"
+          active === "Packs" ? "active" : "inactive"
         }`}
       >
         <a
@@ -47,7 +43,7 @@ const BundleSelector = ({ active, setActive }) => {
       </div>
       <div
         className={`bundleSelector__bundle bundle ${
-          active == "Deck" ? "active" : "inactive"
+          active === "Deck" ? "active" : "inactive"
         }`}
       >
         <a
