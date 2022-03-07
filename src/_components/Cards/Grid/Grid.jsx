@@ -2,15 +2,15 @@ import React from "react";
 import "./Grid.scss";
 import { GridFilters } from "./GridFilters";
 
-const Grid = (props) => {
+const Grid = ({props, totalCount, cardList, setCardList, children}) => {
   return (
     <div className="gridWrap">
       <GridFilters
-        totalCount={props.totalCount}
-        cardList={props.cardList}
-        setCardList={props.setCardList}
+        totalCount={totalCount}
+        cardList={cardList}
+        setCardList={setCardList}
       />
-      <div className="cardGrid">{props.children}</div>
+      <div className="cardGrid">{children}</div>
     </div>
   );
 };

@@ -22,7 +22,7 @@ const Cards = ({ children }) => {
         cardList={cardList}
         setCardList={setCardList}
       >
-        {cardList.length > 0 ?
+        {cardList.length > 0 ? (
           cardList.map((card) => {
             return (
               <Card
@@ -39,7 +39,10 @@ const Cards = ({ children }) => {
                 isOnSale={card.state.isOnSale}
               />
             );
-          }) : <p>There are no cards to display.</p>}
+          })
+        ) : (
+          <p>There are no cards to display.</p>
+        )}
       </Grid>
     </>
   );
