@@ -22,23 +22,24 @@ const Cards = ({ children }) => {
         cardList={cardList}
         setCardList={setCardList}
       >
-        {cardList.map((card) => {
-          return (
-            <Card
-              key={card.id}
-              id={card.id}
-              amount={`${card.no} / ${card.count}`}
-              imgUrl={card.image}
-              title={card.name}
-              subtitle={card.collectionName}
-              power={card.properties[0].value}
-              stars={card.properties[1].value}
-              iName={card.poweredBy}
-              isOnSwap={card.state.isOnSwap}
-              isOnSale={card.state.isOnSale}
-            />
-          );
-        })}
+        {cardList.length > 0 ?
+          cardList.map((card) => {
+            return (
+              <Card
+                key={card.id}
+                id={card.id}
+                amount={`${card.no} / ${card.count}`}
+                imgUrl={card.image}
+                title={card.name}
+                subtitle={card.collectionName}
+                power={card.properties[0].value}
+                stars={card.properties[1].value}
+                iName={card.poweredBy}
+                isOnSwap={card.state.isOnSwap}
+                isOnSale={card.state.isOnSale}
+              />
+            );
+          }) : <p>There are no cards to display.</p>}
       </Grid>
     </>
   );
