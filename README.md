@@ -29,3 +29,9 @@ Allows user to post rest-api queries.
 #### ['Axios Mock Adapter](https://www.npmjs.com/package/axios-mock-adapter)
 
 Makes able to emulate above ones.
+
+### `What is done`
+Implemented prototype from figma, which displays cardGrid from given form in axios. I decided to shallow a navbar, because it was to huge imho. Each card has two states, which can be accesed by user by hovering the card. Page is mobile, responsive and animated. Given images come from random library ['picsum.photos'](https://picsum.photos/)
+
+### `What is not done`
+The solution still lacks any kind of pagination and sorting. This should be managed quickly but not today. I also didn't find any time to style dropdown under the card.
